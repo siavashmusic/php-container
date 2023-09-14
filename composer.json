@@ -1,0 +1,21 @@
+{
+    "name": "siavash/php-container",
+    "require": {
+        "psr/container": "^2.0",
+        "php": "8.2.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Siavash\\Container\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alireza Aghili",
+            "email": "siavashaghili@gmail.com"
+        }
+    ]
+}
