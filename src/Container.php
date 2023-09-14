@@ -7,6 +7,17 @@ use Psr\Container\ContainerInterface;
 class Container implements ContainerInterface
 {
     protected array $services = [];
+
+    protected static $instance;
+
+    public static function getInstance(): self
+    {
+        if (is_null(self::$instance)) {
+            self::$instance = new static;
+        }
+
+        return self::$instance;
+    }
     public function register(string $key, mixed $value): self
     {
         $this->services[$key] = $value;
