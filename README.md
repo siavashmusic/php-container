@@ -1,2 +1,2 @@
 # php-container
-Php container using psr/container Interface
+Php container is a service container using psr/container Interface
